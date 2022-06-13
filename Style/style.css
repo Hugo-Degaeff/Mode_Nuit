@@ -1,0 +1,136 @@
+body{
+    margin: 0;
+    overflow: hidden;
+}
+
+.tout{
+    height: 200vh;
+    background-color: #f3f3f3;
+    transition: 0.3s;
+}
+
+.nuit .tout{
+    background-color: #080d17;
+}
+
+.centre{
+    display: flex;
+    justify-content: center;
+}
+
+.nuit .bouton{
+    background-color: #232838;
+}
+
+.bouton{
+    width: 400px;
+    height: 160px;
+    background-color: orange;
+    border-radius: 400px;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-block-end: 20px;
+    transition: 0.3s;
+}
+
+.bout{
+    width: 140px;
+    height: 140px;
+    background-color: #FFFFFF;
+    border-radius: 150px;
+    transform: translateX(12px);
+    transition: 0.5s;
+    transition-timing-function: cubic-bezier(.05,.7,.3,1.20);
+}
+
+.nuit .rond{
+    background: linear-gradient(to bottom, #111936, #285A7B);
+    border: solid #f5f4ed 8px;
+}
+
+.rond{
+    width: 450px;
+    height: 450px;
+    border: solid black 8px;
+    border-radius: 450px;
+    background: linear-gradient(to bottom, #BE4405, #F6C60C);
+    overflow: hidden;
+    position: relative;
+    transition: 0.3s;
+}
+
+.paysage{
+    display: flex;
+    justify-content: center;
+}
+
+.journee{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    transition: 0.4s;
+}
+
+.tourne{
+    transform: rotate(-55deg);
+}
+
+.mer{
+    width: 450px;
+    height: 450px;
+    background: repeating-radial-gradient(ellipse farthest-corner at center -400%, #f5c30e 30%, #518eac 90%) repeat scroll 0 0 #518eac;
+    transform: translateY(300px);
+}
+
+.soleil{
+    width: 130px;
+    height: 130px;
+    background: #F2EF88;
+    box-shadow: 0 0 20px rgba(242, 239, 136, 0.4);
+    border-radius: 170px;
+    transform: translateY(200px) translateX(120px);
+}
+
+.lune{
+    width: 130px;
+    height: 130px;
+    background-color: #f5f4ed;
+    box-shadow: 0 0 20px rgba(121, 158, 202, 0.4);
+    border-radius: 170px;
+    transform: translateY(-100px) translateX(570px);
+    position: absolute;
+}
+
+.etoile{
+    animation: 0.1s etoile infinite alternate;
+}
+
+.etoile1{
+    transform: translateX(510px) translateY(-130px);
+}
+
+.etoile2{
+    transform: translateX(600px) translateY(120px) rotate(90deg);
+}
+
+.etoile3{
+    transform: translateX(460px) translateY(40px) rotate(60deg);
+}
+
+.droite{
+    transform: translateX(247px);
+}
+
+
+@keyframes etoile{
+    0%{
+        fill: rgb(255, 217, 0);
+    }
+
+    100%{
+        fill: rgb(255, 145, 0);
+    }
+}
